@@ -1,0 +1,11 @@
+# App
+NODE_ENV=development
+PORT=3001
+
+# Database
+POSTGRES_HOST=postgres
+POSTGRES_TEST_HOST=postgres-test
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=root
+POSTGRES_DB=postgres
+POSTGRES_PORT=5432
