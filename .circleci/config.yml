@@ -18,5 +18,4 @@ jobs:
 workflows:
   build-and-test:
     jobs:
-      - node/test:
-          test-results-for: jest
+      - build-and-test
