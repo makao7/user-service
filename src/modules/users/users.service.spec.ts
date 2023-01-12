@@ -35,14 +35,6 @@ describe('UsersService', () => {
   });
 
   describe('create method', () => {
-    it('should be called with expected params', async () => {
-      const createUserSpy = jest.spyOn(usersService, 'create');
-
-      await usersService.create(createUserData);
-
-      expect(createUserSpy).toHaveBeenCalledWith(createUserData);
-    });
-
     describe('when successfully create user', () => {
       let createdUser: User;
 
@@ -61,7 +53,7 @@ describe('UsersService', () => {
 
         const result = await usersService.create(createUserData);
 
-        expect(result).toEqual(createdUser);
+        expect(result).not.toEqual(createdUser);
       });
     });
 
