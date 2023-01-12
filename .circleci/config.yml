@@ -16,7 +16,7 @@ jobs:
           command: npm run test
 
 workflows:
-  sample:
+  build-and-test:
     jobs:
-      - build-and-test:
+      - node/test:
           test-results-for: jest
